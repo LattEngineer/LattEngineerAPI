@@ -1,0 +1,5 @@
+name: LattEngineerAPI
+version: 0.0.1-BETA
+main: io.lattengineer.LattEngineerAPI.LattEngineerAPI
+author: [SkaiDream, gowns463]
+description: No Description.
