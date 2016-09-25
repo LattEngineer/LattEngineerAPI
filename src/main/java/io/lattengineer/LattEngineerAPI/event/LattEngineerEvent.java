@@ -11,7 +11,7 @@ import org.bukkit.event.HandlerList;
 
 public class LattEngineerEvent extends Event implements Cancellable, Runnable
 {
-	private final Map<String, Object> customData = new LinkedHashMap<>();
+	private final Map<String, Object> customData = new LinkedHashMap<String, Object>();
 	public Map<String, Object> getCustomData() { return this.customData; }
 	
 	private final static HandlerList handler = new HandlerList();
