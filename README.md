@@ -19,6 +19,6 @@ If you write using character UTF-8:
     </properties>
 
 # Websites
-LattEngineer offical website: https://lettengineer.io
-LattEngineerAPI documention: http://dev.lattengineer.io/minecraft-plugins/doc/LattEngineerAPI
-LattEngineerAPI build status for jenkins: https://dev.lattengineer.io/jenkins
+* LattEngineer offical website: https://lettengineer.io
+* LattEngineerAPI documention: http://dev.lattengineer.io/minecraft-plugins/doc/LattEngineerAPI
+* LattEngineerAPI build status for jenkins: https://dev.lattengineer.io/jenkins
