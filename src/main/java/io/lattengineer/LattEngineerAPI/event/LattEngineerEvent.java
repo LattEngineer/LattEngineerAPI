@@ -54,10 +54,13 @@ public class LattEngineerEvent extends Event implements Cancellable, Runnable
 	@Override
 	public HandlerList getHandlers() { return handler; }
 
+	@Override
 	public boolean isCancelled() { return this.cancel; }
 
+	@Override
 	public void setCancelled(boolean cancel) { this.cancel = cancel; }
 	
+	@Override
 	public void run() { Bukkit.getPluginManager().callEvent(this); }
 	
 	public static HandlerList getHandlerList() { return handler; }
