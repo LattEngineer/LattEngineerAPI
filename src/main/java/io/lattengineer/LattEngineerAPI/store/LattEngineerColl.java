@@ -99,6 +99,6 @@ public class LattEngineerColl<E extends LattEngineerEntity<E>> extends LattEngin
 		if(plugin == null) plugin = this.getFixedPlugin();
 		this.plugin = plugin;
 		
-		this.entities = new CurrentHashMap<String, Object>();
+		this.entities = new ConcurrentHashMap<String, Object>();
 	}
 }
