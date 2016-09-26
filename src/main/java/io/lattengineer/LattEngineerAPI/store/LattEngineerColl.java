@@ -11,6 +11,12 @@ import io.lattengineer.LattEngineerAPI.database.LEDatabase;
 import io.lattengineer.LattEngineerAPI.entity.LattEngineerEntity;
 import io.lattengineer.LattEngineerAPI.plugin.LattEngineerPlugin;
 
+/**
+ * 
+ * @author SkaiDream
+ *
+ * @param <E>
+ */
 public class LattEngineerColl<E extends LattEngineerEntity<E>> extends LattEngineerCollAbstract<E>
 {
 	protected final String id;
