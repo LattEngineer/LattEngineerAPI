@@ -12,13 +12,16 @@ import io.lattengineer.LattEngineerAPI.entity.LattEngineerEntity;
 import io.lattengineer.LattEngineerAPI.plugin.LattEngineerPlugin;
 
 /**
- * 
+ * LattEngineerColl use I/O the database effiently.
  * @author SkaiDream
  *
- * @param <E>
+ * @param <E> The generic class, which is extended by LattEngineerEntity
  */
 public class LattEngineerColl<E extends LattEngineerEntity<E>> extends LattEngineerCollAbstract<E>
 {
+	protected final Map<String, Object> entities;
+	public Map<String, Object> getEntities() { return Collections.unmodifiableMap(this.entities); }
+
 	protected final String id;
 	@Override public String getId() { return this.id; }
 	public String getFixedId()
@@ -91,5 +94,7 @@ public class LattEngineerColl<E extends LattEngineerEntity<E>> extends LattEngin
 		
 		if(plugin == null) plugin = this.getFixedPlugin();
 		this.plugin = plugin;
+		
+		this.entities = new CurrentHashMap<String, Object>();
 	}
 }
