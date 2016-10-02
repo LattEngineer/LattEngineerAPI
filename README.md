@@ -1,5 +1,5 @@
 # LattEngineerAPI
-[![Build Status](https://travis-ci.org/LattEngineer/LattEngineerAPI.svg?branch=master)](https://travis-ci.org/LattEngineer/LattEngineerAPI) ![Version](https://img.shields.io/badge/Version-0.0.1--BETA-red.svg) ![License](https://img.shields.io/packagist/l/doctrine/orm.svg) ![Depend](https://img.shields.io/david/strongloop/express.svg)
+[![Build Status](https://travis-ci.org/LattEngineer/LattEngineerAPI.svg?branch=master)](https://travis-ci.org/LattEngineer/LattEngineerAPI) ![Version](https://img.shields.io/badge/Version-0.0.1--BETA-red.svg) [![License](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://github.com/LattEngineer/LattEngineerAPI/blob/master/LICENSE.md) ![Depend](https://img.shields.io/david/strongloop/express.svg)
 
 LattEngineerAPI is a library API, but being developed, If when you develop a plug-in Minecraft, which can be useful because it provides a variety of functions. This is coding by LattEngineer members, If you have developing ideas found an issue, please refer to the issues tracker.
 
