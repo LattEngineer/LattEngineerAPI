@@ -1,5 +1,6 @@
 package io.lattengineer.LattEngineerAPI.command;
 
-public class LattEngineerCommand {
+public class LattEngineerCommand
+{
 
 }

@@ -8,4 +8,5 @@ public interface InterfaceColl<E extends LattEngineerEntity<E>>
 	public String getId();
 	public Class<E> getGenericClass();
 	public LattEngineerPlugin getPlugin();
+	public Runnable getTick();
 }

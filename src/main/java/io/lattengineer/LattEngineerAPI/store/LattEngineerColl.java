@@ -60,6 +60,9 @@ public class LattEngineerColl<E extends LattEngineerEntity<E>> extends LattEngin
 		return leplugin;
 	}
 	
+	protected Runnable tick;
+	@Override public Runnable getTick() { return this.tick; }
+	
 	public LattEngineerColl()
 	{
 		this(null, null, null);
@@ -85,5 +88,23 @@ public class LattEngineerColl<E extends LattEngineerEntity<E>> extends LattEngin
 		
 		if(plugin == null) plugin = this.getFixedPlugin();
 		this.plugin = plugin;
+		this.tick = new Runnable() {
+			
+			@Override
+			public void run()
+			{
+				LattEngineerColl.this.onTick();
+			}
+		};
+	}
+	
+	public void onTick()
+	{
+		
+	}
+	
+	public synchronized void syncDataFixed(String id)
+	{
+		
 	}
 }
