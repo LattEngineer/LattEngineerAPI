@@ -3,16 +3,8 @@ package io.lattengineer.LattEngineerAPI.math;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import io.lattengineer.LattEngineerAPI.util.FormatType;
-
-public abstract class CalculatorAbstract extends FormatType implements Formula
+public abstract class CalculatorAbstract implements Formula
 {	
-	@Override
-	public Formula get()
-	{
-		return this.get(null);
-	}
-	
 	@Override
 	public void putValue(String key, Object value)
 	{
