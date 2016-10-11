@@ -10,27 +10,10 @@ import io.lattengineer.LattEngineerAPI.util.FormatUtil;
 
 public class CalcFormula extends CalculatorAbstract
 {
-	public static Formula newFormula()
-	{
-		return new CalcFormula();
-	}
-	
-	public static Formula newFormula(String formula) throws IllegalArgumentException
-	{
-		return new CalcFormula(formula);
-	}
-	
-	@Override
-	public Formula get(Object value)
-	{
-		return this;
-	}
-	
-	protected String formulaStr = null;
 	protected String symbolFormat = "<$s>";
 	@Override public String getSymbolFormat() { return this.symbolFormat; }
 	@Override
-	public void setSymbolFormat(String format) throws IllegalArgumentException
+	public void setSymbolFormat(String format)
 	{
 		if(format == null) throw new NullPointerException("the format must be not null");
 		if(! format.contains("\\$s")) throw new IllegalArgumentException("format type invaild");
@@ -166,74 +149,58 @@ public class CalcFormula extends CalculatorAbstract
 		this.value = new LinkedHashMap<String, Object>();
 	}
 	
-	public CalcFormula(String formula) throws NullPointerException
+	public CalcFormula(String formula)
 	{
-		if(formula == null) throw new NullPointerException();
+		if(formula == null) throw new NullPointerException("formula cannot be null");
 		this.formula = formula;
 		this.value = new LinkedHashMap<String, Object>();
 	}
 	
-	public CalcFormula(Formula formula) throws ClassNotFoundException
+	public CalcFormula(Formula formula)
 	{
-		if(formula == null) throw new ClassNotFoundException("formula cannot be null");
+		if(formula == null) throw new NullPointerException("formula cannot be null");
 		this.formula = formula.getFormula();
 		this.value = formula.getValueMap();
 		this.value = new LinkedHashMap<String, Object>();
 	}
-	
 	@Override
-	public void putAll(Map<? extends String, ? extends Object> v)
-	{
-		this.value.putAll(v);
+	public void putAll(Map<? extends String, ? extends Object> v) {
+		// TODO Auto-generated method stub
+		
 	}
-	
 	@Override
-	public int getResultInteger()
-	{
-		return (int) this.getResult();
+	public int getResultInteger() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
-	
 	@Override
-	public int getResultInteger(String formula)
-	{
-		Formula f = new CalcFormula(formula);
-		return f.getResultInteger();
+	public int getResultInteger(String arg0) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
-	
 	@Override
-	public int getResultInteger(String formula, Map<String, Object> v)
-	{
-		Formula f = new CalcFormula(formula);
-		f.putAll(v);
-		return f.getResultInteger();
+	public int getResultInteger(String arg0, Map<String, Object> v) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
-	
 	@Override
-	public double getResultDouble()
-	{
-		return (Double)this.getResult();
+	public int getResultDouble() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
-	
 	@Override
-	public double getResultDouble(String formula)
-	{
-		Formula f = new CalcFormula(formula);
-		return f.getResultDouble();
+	public double getResultDouble(String arg0) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
-	
 	@Override
-	public double getResultDouble(String formula, Map<String, Object> v)
-	{
-		Formula f = new CalcFormula(formula);
-		f.putAll(v);
-		return f.getResultDouble();
+	public double getResultDouble(String arg0, Map<String, Object> v) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
-	
 	@Override
-	public Object getResult(String formula, Map<String, Object> v)
-	{
-		Formula f = new CalcFormula(formula);
-		f.putValueMap(v);
-		return f.getResult();
+	public Object getResult(String arg0, Map<String, Object> v) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

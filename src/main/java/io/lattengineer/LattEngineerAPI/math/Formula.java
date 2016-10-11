@@ -3,16 +3,14 @@ package io.lattengineer.LattEngineerAPI.math;
 import java.util.Collection;
 import java.util.Map;
 import java.util.Map.Entry;
-
-import io.lattengineer.LattEngineerAPI.Stabilized;
-
 import java.util.Set;
 
 /**
+ * 
  * @author SkaiDream
  *
  */
-public interface Formula extends Stabilized<Formula>
+public interface Formula
 {
 	public String getSymbolFormat();
 	public void setSymbolFormat(String arg0);
@@ -43,7 +41,7 @@ public interface Formula extends Stabilized<Formula>
 	public int getResultInteger();
 	public int getResultInteger(String arg0);
 	public int getResultInteger(String arg0, Map<String, Object> v);
-	public double getResultDouble();
+	public int getResultDouble();
 	public double getResultDouble(String arg0);
 	public double getResultDouble(String arg0, Map<String, Object> v);
 	public Object getResult();
